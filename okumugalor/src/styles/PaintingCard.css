@@ -1,0 +1,19 @@
+.painting-card {
+    @apply rounded-lg overflow-hidden shadow-md;
+}
+
+.painting-card img {
+    @apply w-full h-64 object-cover;
+}
+
+.painting-card .p-4 {
+    @apply p-4;
+}
+
+.painting-card .text-xl font-bold mb-2 {
+    @apply text-xl font-bold mb-2;
+}
+
+.painting-card .text-gray-500 {
+    @apply text-gray-500;
+}

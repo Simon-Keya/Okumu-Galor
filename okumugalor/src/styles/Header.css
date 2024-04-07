@@ -1,0 +1,55 @@
+/* src/components/Header/Header.css */
+
+/* Base styles for the header */
+.header {
+    background-color: #ffffff;
+    /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+}
+
+/* Styles for the container */
+.container {
+    padding-left: 1.5rem;
+    /* Left padding */
+    padding-right: 1.5rem;
+    /* Right padding */
+}
+
+/* Styles for the logo */
+.logo {
+    color: #1a202c;
+    /* Text color */
+    font-size: 1.25rem;
+    /* Font size */
+}
+
+/* Styles for the navigation links */
+.nav-links {
+    list-style: none;
+    /* Remove default list styles */
+}
+
+.nav-links li {
+    margin-right: 1rem;
+    /* Right margin between links */
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+    /* Remove margin for the last link */
+}
+
+.nav-link {
+    color: #4a5568;
+    /* Default text color */
+    padding: 0.5rem 1rem;
+    /* Padding */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #2d3748;
+    /* Text color on hover */
+}

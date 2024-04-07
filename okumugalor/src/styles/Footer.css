@@ -1,0 +1,43 @@
+.footer {
+    @apply text-gray-600 body-font bg-gray-100;
+}
+
+.footer .container {
+    @apply px-5 py-8 mx-auto flex items-center sm:flex-row flex-col;
+}
+
+.footer .title-font {
+    @apply font-medium;
+}
+
+.footer button {
+    @apply flex title-font font-medium items-center md:justify-start justify-center text-gray-900;
+}
+
+.footer button svg {
+    @apply w-10 h-10 text-gray-500 p-2 bg-gray-200 rounded-full;
+}
+
+.footer button span {
+    @apply ml-3 text-xl;
+}
+
+.footer p {
+    @apply text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4;
+}
+
+.footer p a {
+    @apply text-gray-600 ml-1;
+}
+
+.footer .social-links {
+    @apply inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start;
+}
+
+.footer .social-links a {
+    @apply text-gray-500 mr-3;
+}
+
+.footer .social-links a svg {
+    @apply w-5 h-5;
+}

@@ -1,0 +1,64 @@
+/* Base styles for the contact section */
+.contact-section {
+    @apply text-gray-600 body-font;
+}
+
+/* Container for the contact content */
+.container {
+    @apply px-5 py-24 mx-auto;
+}
+
+/* Flexbox for contact elements */
+.flex-container {
+    @apply flex flex-col text-center w-full mb-20;
+}
+
+/* Contact title */
+.contact-title {
+    @apply sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900;
+}
+
+/* Contact description */
+.contact-description {
+    @apply lg:w-1/2 w-full mx-auto leading-relaxed text-base;
+}
+
+/* Styling for each contact item */
+.contact-item {
+    @apply p-4 md:w-1/3;
+}
+
+/* Styling for the border of each contact item */
+.contact-item-border {
+    @apply h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden;
+}
+
+/* Padding and styling for the content within each contact item */
+.contact-content {
+    @apply p-6;
+}
+
+/* Styling for the title of each contact item */
+.contact-item-title {
+    @apply tracking-widest text-xs title-font font-medium text-gray-400 mb-1;
+}
+
+/* Styling for the main content title of each contact item */
+.contact-main-title {
+    @apply title-font text-lg font-medium text-gray-900 mb-3;
+}
+
+/* Styling for the description of each contact item */
+.contact-item-description {
+    @apply leading-relaxed mb-5;
+}
+
+/* Styling for the link and icon within each contact item */
+.contact-link {
+    @apply inline-flex items-center text-indigo-500 hover:text-gray-900;
+}
+
+/* Styling for the icon within each contact link */
+.contact-icon {
+    @apply w-4 h-4 ml-2;
+}

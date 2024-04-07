@@ -1,0 +1,10 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './styles/Header.css';
+@import './styles/About.css';
+@import './styles/Gallery.css';
+@import './styles/PaintingCard.css';
+@import './styles/Contact.css';
+@import './styles/Footer.css';
