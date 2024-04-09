@@ -1,55 +1,56 @@
-/* src/components/Header/Header.css */
-
 /* Base styles for the header */
 .header {
-    background-color: #ffffff;
-    /* White background */
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Shadow effect */
 }
 
-/* Styles for the container */
+/* Container for the header content */
 .container {
-    padding-left: 1.5rem;
-    /* Left padding */
-    padding-right: 1.5rem;
-    /* Right padding */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Styles for the logo */
+/* Logo */
 .logo {
-    color: #1a202c;
-    /* Text color */
+    display: flex;
+    align-items: center;
+    color: #4b5563;
     font-size: 1.25rem;
-    /* Font size */
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/* Styles for the navigation links */
-.nav-links {
+/* Logo image */
+.logo img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation menu items */
+.nav-menu li {
+    margin-left: 1rem;
     list-style: none;
-    /* Remove default list styles */
 }
 
-.nav-links li {
-    margin-right: 1rem;
-    /* Right margin between links */
-}
-
-.nav-links li:last-child {
-    margin-right: 0;
-    /* Remove margin for the last link */
-}
-
-.nav-link {
-    color: #4a5568;
-    /* Default text color */
-    padding: 0.5rem 1rem;
-    /* Padding */
+/* Navigation menu links */
+.nav-menu li a {
+    color: #4b5563;
+    text-decoration: none;
     transition: color 0.3s ease;
-    /* Smooth transition for hover effect */
 }
 
-.nav-link:hover {
-    color: #2d3748;
-    /* Text color on hover */
+/* Navigation menu link hover state */
+.nav-menu li a:hover {
+    color: #6b7280;
 }

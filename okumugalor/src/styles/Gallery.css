@@ -1,33 +1,43 @@
-/* Base styles for the gallery section */
-.gallery {
-    @apply text-gray-600 body-font;
+/* Base styles for the Gallery section */
+.gallery-section {
+    padding: 2rem 0;
+    /* Reduced top and bottom padding */
 }
 
-/* Container for the gallery content */
-.container {
-    @apply px-5 py-24 mx-auto;
+/* Styling for the container within the Gallery section */
+.gallery-container {
+    max-width: 1200px;
+    /* Reduced maximum width */
+    margin: 0 auto;
+    /* Center align the container */
 }
 
-/* Grid for painting cards */
-.grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4;
-    /* Adjust grid columns as needed */
+/* Styling for the flex container within the Gallery section */
+.gallery-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+    /* Reduced negative margin */
 }
 
-/* Individual painting card styles */
+/* Styling for the individual PaintingCard within the Gallery section */
 .painting-card {
-    @apply rounded-lg overflow-hidden shadow-md;
+    flex: 0 0 calc(33.33% - 2rem);
+    /* Reduced width and spacing */
+    margin: 1rem;
+    /* Reduced margin */
 }
 
-.painting-card img {
-    @apply w-full h-64 object-cover;
-    /* Adjust image height as needed */
+@media (max-width: 768px) {
+    .painting-card {
+        flex: 0 0 calc(50% - 2rem);
+        /* Adjusted width for smaller screens */
+    }
 }
 
-.painting-card .title {
-    @apply mt-4 text-xl font-bold mb-2;
-}
-
-.painting-card .description {
-    @apply text-gray-500;
+@media (max-width: 480px) {
+    .painting-card {
+        flex: 0 0 calc(100% - 2rem);
+        /* Adjusted width for even smaller screens */
+    }
 }

@@ -1,43 +1,61 @@
-.footer {
-    @apply text-gray-600 body-font bg-gray-100;
+/* Base styles for the footer section */
+.footer-section {
+    font-family: var(--font-body);
+    background-color: #f3f4f6;
 }
 
-.footer .container {
-    @apply px-5 py-8 mx-auto flex items-center sm:flex-row flex-col;
+/* Container for the footer content */
+.container {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer .title-font {
-    @apply font-medium;
+/* Styling for the logo button */
+.logo-button {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #4b5563;
+    text-decoration: none;
 }
 
-.footer button {
-    @apply flex title-font font-medium items-center md:justify-start justify-center text-gray-900;
+/* Styling for the logo icon */
+.logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: #d1d5db;
+    border-radius: 9999px;
 }
 
-.footer button svg {
-    @apply w-10 h-10 text-gray-500 p-2 bg-gray-200 rounded-full;
+/* Styling for the logo text */
+.logo-text {
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
-.footer button span {
-    @apply ml-3 text-xl;
+/* Styling for the footer information */
+.footer-info {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    color: #6b7280;
 }
 
-.footer p {
-    @apply text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4;
+/* Styling for the footer links */
+.footer-links {
+    margin-left: auto;
 }
 
-.footer p a {
-    @apply text-gray-600 ml-1;
+/* Styling for the social media icons */
+.social-icon {
+    margin-left: 1rem;
+    color: #6b7280;
 }
 
-.footer .social-links {
-    @apply inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start;
-}
-
-.footer .social-links a {
-    @apply text-gray-500 mr-3;
-}
-
-.footer .social-links a svg {
-    @apply w-5 h-5;
+/* Styling for the social media icons on hover */
+.social-icon:hover {
+    color: #4b5563;
 }
