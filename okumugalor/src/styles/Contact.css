@@ -1,89 +1,109 @@
-/* Base styles for the contact section */
-.contact-section {
-    color: #4b5563;
+/* General Styles */
+.text-gray-600 {
+    color: #6b7280;
+    /* Adjust text color to a darker shade of gray */
 }
 
-/* Container for the contact content */
+.body-font {
+    font-family: "Source Sans Pro", sans-serif;
+    /* Add a modern font */
+}
+
+/* Container Styles */
 .container {
-    padding: 6rem 2.5rem;
-    margin: auto;
+    max-width: 7xl;
+    /* Set a maximum width for responsiveness */
+    padding: 4rem 0;
+    /* Add some top and bottom padding */
 }
 
-/* Flexbox for contact elements */
-.flex-container {
-    display: flex;
-    flex-direction: column;
+/* Section Header Styles */
+.flex.flex-col.text-center.w-full.mb-20 {
     text-align: center;
-    margin-bottom: 5rem;
+    /* Center text alignment */
 }
 
-/* Contact title */
-.contact-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1a202c;
+.title-font {
+    font-weight: bold;
+    /* Make titles bolder */
 }
 
-/* Contact description */
-.contact-description {
-    width: 100%;
-    max-width: 50rem;
-    margin: auto;
-    line-height: 1.5;
+/* Contact Card Styles */
+.flex.flex-wrap.-m-4 {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    margin: -1rem;
+    /* Remove default margin for spacing */
 }
 
-/* Styling for each contact item */
-.contact-item {
+.p-4.md:w-1 {
     padding: 1rem;
-    width: calc(100% / 3);
+    width: calc(33.33% - 2rem);
+    /* Calculate width based on columns */
 }
 
-/* Styling for the border of each contact item */
-.contact-item-border {
-    border: 2px solid rgba(229, 231, 235, 0.6);
+.h-full.border-2.border-gray-200.border-opacity-60.rounded-lg.overflow-hidden {
+    height: 100%;
+    border: 2px solid rgba(229, 229, 229, 0.6);
+    /* Create a subtle border */
     border-radius: 0.5rem;
-    overflow: hidden;
+    /* Add rounded corners */
 }
 
-/* Padding and styling for the content within each contact item */
-.contact-content {
+.p-6 {
     padding: 1.5rem;
 }
 
-/* Styling for the title of each contact item */
-.contact-item-title {
+.tracking-widest.text-xs.title-font.font-medium.text-gray-400.mb-1 {
+    letter-spacing: 0.25em;
+    /* Increase letter spacing for headings */
     font-size: 0.75rem;
-    font-weight: 500;
-    color: #cbd5e0;
-    margin-bottom: 0.25rem;
+    /* Adjust heading font size */
+    color: #9ca3af;
+    /* Slightly lighter gray for headings */
 }
 
-/* Styling for the main content title of each contact item */
-.contact-main-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #1a202c;
-    margin-bottom: 0.75rem;
+.title-font.text-lg.font-medium.text-gray-900.mb-3 {
+    font-size: 1rem;
+    /* Adjust body text size */
+    color: #212529;
+    /* Darker gray for body text */
+    margin-bottom: 1.5rem;
 }
 
-/* Styling for the description of each contact item */
-.contact-item-description {
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
+.leading-relaxed.mb-5 {
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    margin-bottom: 2.5rem;
 }
 
-/* Styling for the link and icon within each contact item */
-.contact-link {
-    color: #6366f1;
-    display: inline-flex;
+/* Link Styles */
+.inline-flex.items-center.text-indigo-500.hover:text-gray-900 {
+    display: flex;
     align-items: center;
-    transition: color 0.3s ease;
+    color: #6777ef;
+    /* Set icon color */
+    transition: color 0.2s ease-in-out;
+    /* Add hover effect */
 }
 
-/* Styling for the icon within each contact link */
-.contact-icon {
-    width: 1rem;
-    height: 1rem;
+.inline-flex.items-center.text-indigo-500.hover:text-gray-900 svg {
     margin-left: 0.5rem;
+    /* Adjust icon spacing */
+}
+
+.inline-flex.items-center.text-indigo-500.hover:text-gray-900:hover {
+    color: #212529;
+    /* Change text color on hover */
+}
+
+/* Icon Styles */
+svg {
+    width: 1.25rem;
+    /* Reduce icon size */
+    height: 1.25rem;
+    /* Reduce icon size */
+    fill: currentColor;
+    /* Inherit icon color from link */
 }

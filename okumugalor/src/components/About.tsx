@@ -17,20 +17,30 @@ const About = () => {
         </div>
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+            <div className="bg-gray-100 h-full rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 h-24 object-cover object-center w-full"
                 src="https://source.unsplash.com/1600x900/?artist,portrait"
-                alt="Artist" // Corrected alt text
+                alt="Artist Portrait"
               />
               <div className="p-4">
                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
-                  Artist Name
+                  Painter Name
                 </h2>
                 <p className="leading-loose text-gray-600">
-                  A short bio about yourself and your artistic journey. You can
-                  highlight your achievements, inspirations, or anything else that
-                  makes your art unique.
+                  WHO AM I
+                  <br />
+                  Painting is my passion.
+                  <br />
+                  I see beauty in all things,
+                  <br />
+                  and I paint what I see.
+                  <br />
+                  I have been painting for 15 years.
+                  <br />
+                  My preferred medium is oil, but I also appreciate the subtleties of watercolors.
+                  <br />
+                  In the past five years, I've dabbled in sketching and drawing.
                 </p>
               </div>
             </div>
