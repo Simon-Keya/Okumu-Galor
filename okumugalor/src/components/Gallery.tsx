@@ -1,10 +1,14 @@
 import React from 'react';
 import PaintingCard from './PaintingCard';
-import '../styles/Gallery.css'
+import '../styles/Gallery.css';
 
-const Gallery: React.FC = () => {
+interface GalleryProps {
+  id: string;
+}
+
+const Gallery: React.FC<GalleryProps> = ({ id }) => {
   return (
-    <section className="text-gray-600 body-font" id="gallery">
+    <section id={id} className="text-gray-600 body-font">
       <div className="container px-5 py-8 mx-auto">
         <h2 className="text-3xl font-bold mb-8">Gallery</h2>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

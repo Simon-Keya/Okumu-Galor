@@ -1,56 +1,101 @@
-/* Base styles for the header */
+/* Header Styles */
+
 .header {
-    background-color: #fff;
+    background-color: #4a5568;
+    /* Updated header background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow */
 }
 
-/* Container for the header content */
 .container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
+    width: 100%;
+    /* Full width */
+    padding-right: 2rem;
+    /* Right padding */
+    padding-left: 2rem;
+    /* Left padding */
+    margin-right: auto;
+    /* Center the container */
+    margin-left: auto;
+    /* Center the container */
+}
+
+.px-6 {
+    padding-right: 1.5rem;
+    /* Right padding */
+    padding-left: 1.5rem;
+    /* Left padding */
+}
+
+.py-4 {
+    padding-top: 1rem;
+    /* Top padding */
+    padding-bottom: 1rem;
+    /* Bottom padding */
+}
+
+.flex {
     display: flex;
+    /* Display as flex */
+}
+
+.items-center {
+    align-items: center;
+    /* Center items vertically */
+}
+
+.justify-between {
     justify-content: space-between;
-    align-items: center;
+    /* Space between items */
 }
 
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    color: #4b5563;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
+ul {
+    list-style-type: none;
+    /* Remove list bullet */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
 }
 
-/* Logo image */
-.logo img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
+ul li {
+    margin-right: 1.5rem;
+    /* Right margin between list items */
 }
 
-/* Navigation menu */
-.nav-menu {
-    display: flex;
-    align-items: center;
+.text-gray-800 {
+    color: #2d3748;
+    /* Dark gray text */
 }
 
-/* Navigation menu items */
-.nav-menu li {
-    margin-left: 1rem;
-    list-style: none;
+/* Updated text color to white */
+.text-white {
+    color: #ffffff;
+    /* White text */
 }
 
-/* Navigation menu links */
-.nav-menu li a {
-    color: #4b5563;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Updated hover text color to light gray */
+.hover\:text-gray-300:hover {
+    color: #a0aec0;
+    /* Light gray text on hover */
 }
 
-/* Navigation menu link hover state */
-.nav-menu li a:hover {
-    color: #6b7280;
+.ml-2 {
+    margin-left: 0.5rem;
+    /* Left margin */
+}
+
+.w-8 {
+    width: 2rem;
+    /* Width */
+}
+
+.h-8 {
+    height: 2rem;
+    /* Height */
+}
+
+.flex a:hover {
+    opacity: 0.7;
+    /* Reduce opacity on hover */
 }

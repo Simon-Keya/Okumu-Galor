@@ -1,72 +1,58 @@
-/* Base styles for the about section */
-.about-section {
-    font-family: var(--font-body);
+/* Base styles for the About section */
+.about {
+    text-align: left;
+    /* Align text to the left */
 }
 
-/* Container for the about content */
-.container {
-    padding: 4rem 0;
+/* Grid styles */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
-/* Flexbox for about elements */
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5rem;
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screens and above */
+    }
 }
 
-/* About title */
-.about-title {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: #374151;
+/* Styles for the text content */
+.text-content {
+    max-width: 100%;
+    /* Limit text content to full width */
 }
 
-/* About description */
-.about-description {
-    max-width: 75%;
-    text-align: center;
-    line-height: 1.5;
-    color: #4b5563;
+/* Styles for the image */
+.img-container {
+    max-width: 100%;
+    /* Limit image container to full width */
 }
 
-/* Styling for each about card */
-.about-card {
-    padding: 1rem;
-    width: 100%;
+/* Responsive styles */
+@media (min-width: 768px) {
+    .img-container {
+        order: 1;
+        /* Change the order of the image container for medium screens and above */
+    }
+
+    .text-content {
+        order: 2;
+        /* Change the order of the text content for medium screens and above */
+    }
 }
 
-/* Styling for the border of each about card */
-.about-card-border {
-    border: 2px solid #e5e7eb;
-    border-radius: 0.5rem;
-    overflow: hidden;
-}
-
-/* Styling for the image within each about card */
-.about-image {
-    width: 100%;
+/* Additional styles for the image */
+.img-container img {
+    max-width: 100%;
+    /* Limit image width to full width of container */
     height: auto;
-    object-fit: cover;
+    /* Maintain aspect ratio */
 }
 
-/* Styling for the content within each about card */
-.about-content {
-    padding: 1rem;
-}
-
-/* Styling for the title of each about card */
-.about-card-title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #4b5563;
-}
-
-/* Styling for the description of each about card */
-.about-card-description {
-    color: #4b5563;
-    line-height: 1.5;
+/* Additional styles for the text content */
+.text-content p {
+    margin-top: 1rem;
+    /* Add top margin to paragraphs */
 }

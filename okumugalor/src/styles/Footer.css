@@ -1,61 +1,95 @@
-/* Base styles for the footer section */
-.footer-section {
-    font-family: var(--font-body);
-    background-color: #f3f4f6;
+/* Footer Styles */
+
+.footer {
+    background-color: #f7fafc;
+    /* Background color */
+    color: #4a5568;
+    /* Text color */
 }
 
-/* Container for the footer content */
 .container {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Styling for the logo button */
-.logo-button {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    color: #4b5563;
-    text-decoration: none;
-}
-
-/* Styling for the logo icon */
-.logo-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem;
-    background-color: #d1d5db;
-    border-radius: 9999px;
-}
-
-/* Styling for the logo text */
-.logo-text {
-    margin-left: 1rem;
-    font-size: 1.5rem;
-}
-
-/* Styling for the footer information */
-.footer-info {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    color: #6b7280;
-}
-
-/* Styling for the footer links */
-.footer-links {
+    width: 100%;
+    /* Full width */
+    padding-right: 2rem;
+    /* Right padding */
+    padding-left: 2rem;
+    /* Left padding */
+    margin-right: auto;
+    /* Center the container */
     margin-left: auto;
+    /* Center the container */
 }
 
-/* Styling for the social media icons */
-.social-icon {
-    margin-left: 1rem;
-    color: #6b7280;
+.px-6 {
+    padding-right: 1.5rem;
+    /* Right padding */
+    padding-left: 1.5rem;
+    /* Left padding */
 }
 
-/* Styling for the social media icons on hover */
-.social-icon:hover {
-    color: #4b5563;
+.py-4 {
+    padding-top: 1rem;
+    /* Top padding */
+    padding-bottom: 1rem;
+    /* Bottom padding */
+}
+
+.flex {
+    display: flex;
+    /* Display as flex */
+}
+
+.flex-col {
+    flex-direction: column;
+    /* Column layout */
+}
+
+.md\:flex-row {
+    flex-direction: row;
+    /* Row layout for medium screens and above */
+}
+
+.items-center {
+    align-items: center;
+    /* Center items vertically */
+}
+
+.justify-between {
+    justify-content: space-between;
+    /* Space between items */
+}
+
+.md\:justify-start {
+    justify-content: flex-start;
+    /* Start alignment for medium screens and above */
+}
+
+.text-gray-500 {
+    color: #718096;
+    /* Gray text */
+}
+
+.text-gray-600 {
+    color: #4a5568;
+    /* Dark gray text */
+}
+
+.mt-4 {
+    margin-top: 1rem;
+    /* Top margin */
+}
+
+.md\:mt-0 {
+    margin-top: 0;
+    /* No top margin for medium screens and above */
+}
+
+.ml-3 {
+    margin-left: 0.75rem;
+    /* Left margin */
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+    /* Left margin */
 }

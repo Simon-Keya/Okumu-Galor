@@ -1,33 +1,43 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  scrollToSection: (id: string) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   return (
-    <header className="bg-white shadow-lg">
+    <header className="bg-teal-500 shadow-lg">  
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div>
-            <a href="/" className="flex items-center text-gray-800 text-2xl font-bold">
-              <img src="/logo.png" alt="Fine Art Portfolio" className="w-8 h-8 mr-2" />
-              Fine Art Portfolio
-            </a>
+            <Link to="/" className="flex items-center text-black text-2xl font-bold">
+              <img src="/logo.png" alt="Okumu Galor" className="w-8 h-8 mr-2" />
+              OKUMU GALOR
+            </Link>
           </div>
           <div>
             <ul className="flex items-center">
-              <li>
-                <a href="#gallery" className="text-gray-500 hover:text-gray-600 px-3 py-2">
-                  Gallery
-                </a>
+              <li className="mr-4">  
+                <button onClick={() => scrollToSection('home')} className="text-black hover:text-gray-200 px-3 py-2">
+                  Home
+                </button>
               </li>
-              <li>
-                <a href="#about" className="text-gray-500 hover:text-gray-600 px-3 py-2">
+              <li className="mr-4">  
+                <button onClick={() => scrollToSection('about')} className="text-black hover:text-gray-200 px-3 py-2">
                   About
-                </a>
+                </button>
               </li>
-              <li>
-                <a href="#contact" className="text-gray-500 hover:text-gray-600 px-3 py-2">
+              <li className="mr-4">  
+                <button onClick={() => scrollToSection('gallery')} className="text-black hover:text-gray-200 px-3 py-2">
+                  Gallery
+                </button>
+              </li>
+              <li>  
+                <button onClick={() => scrollToSection('contact')} className="text-black hover:text-gray-200 px-3 py-2">
                   Contact
-                </a>
+                </button>
               </li>
             </ul>
           </div>

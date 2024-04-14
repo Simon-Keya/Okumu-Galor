@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './styles/Home.css';
 @import './styles/Header.css';
 @import './styles/About.css';
 @import './styles/Gallery.css';

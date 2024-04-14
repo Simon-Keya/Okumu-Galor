@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles/Contact.css';
 
-const Contact = () => {
+interface ContactProps {
+  id: string;
+}
+
+const Contact: React.FC<ContactProps> = ({ id }) => {
   return (
-    <section className="text-gray-700 body-font">
+    <section id={id} className="text-gray-700 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="lg:w-1/2 md:w-2/3 mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center mt-8">
