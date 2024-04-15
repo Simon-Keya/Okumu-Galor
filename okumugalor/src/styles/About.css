@@ -1,58 +1,25 @@
-/* Base styles for the About section */
-.about {
-    text-align: left;
-    /* Align text to the left */
+.about-section {
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Grid styles */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+.about-heading {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    padding: 0 10px;
+}
+
+.about-info {
+    margin-top: 10px;
+    color: #777;
 }
 
 @media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* Two columns for medium screens and above */
+    .about-heading {
+        font-size: 36px;
     }
-}
-
-/* Styles for the text content */
-.text-content {
-    max-width: 100%;
-    /* Limit text content to full width */
-}
-
-/* Styles for the image */
-.img-container {
-    max-width: 100%;
-    /* Limit image container to full width */
-}
-
-/* Responsive styles */
-@media (min-width: 768px) {
-    .img-container {
-        order: 1;
-        /* Change the order of the image container for medium screens and above */
-    }
-
-    .text-content {
-        order: 2;
-        /* Change the order of the text content for medium screens and above */
-    }
-}
-
-/* Additional styles for the image */
-.img-container img {
-    max-width: 100%;
-    /* Limit image width to full width of container */
-    height: auto;
-    /* Maintain aspect ratio */
-}
-
-/* Additional styles for the text content */
-.text-content p {
-    margin-top: 1rem;
-    /* Add top margin to paragraphs */
 }

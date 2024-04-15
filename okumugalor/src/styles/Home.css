@@ -80,8 +80,8 @@
 .img-home {
     max-width: 100%;
     /* Adjust image size */
-    height: 20rem;
-    /* Set a fixed height */
+    height: auto;
+    /* Ensure aspect ratio is maintained */
 }
 
 /* Responsive styles */

@@ -1,109 +1,124 @@
-/* General Styles */
-.text-gray-600 {
-    color: #6b7280;
-    /* Adjust text color to a darker shade of gray */
+/* Contact.css */
+
+.bg-gray-100 {
+    background-color: #f7fafc;
+    /* Adjust as needed */
 }
 
-.body-font {
-    font-family: "Source Sans Pro", sans-serif;
-    /* Add a modern font */
+.py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-/* Container Styles */
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sm\:px-6 {
+    @apply px-8;
+}
+
+.lg\:px-8 {
+    @apply px-10;
+}
+
 .container {
-    max-width: 7xl;
-    /* Set a maximum width for responsiveness */
-    padding: 4rem 0;
-    /* Add some top and bottom padding */
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* Section Header Styles */
-.flex.flex-col.text-center.w-full.mb-20 {
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mb-20 {
+    margin-bottom: 5rem;
+}
+
+.text-center {
     text-align: center;
-    /* Center text alignment */
 }
 
-.title-font {
-    font-weight: bold;
-    /* Make titles bolder */
+.text-3xl {
+    font-size: 1.875rem;
 }
 
-/* Contact Card Styles */
-.flex.flex-wrap.-m-4 {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
-    margin: -1rem;
-    /* Remove default margin for spacing */
+.font-extrabold {
+    font-weight: 800;
 }
 
-.p-4.md:w-1 {
-    padding: 1rem;
-    width: calc(33.33% - 2rem);
-    /* Calculate width based on columns */
+.tracking-tight {
+    letter-spacing: -0.025em;
 }
 
-.h-full.border-2.border-gray-200.border-opacity-60.rounded-lg.overflow-hidden {
-    height: 100%;
-    border: 2px solid rgba(229, 229, 229, 0.6);
-    /* Create a subtle border */
-    border-radius: 0.5rem;
-    /* Add rounded corners */
+.text-gray-900 {
+    color: #374151;
+    /* Adjust as needed */
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+    /* Adjust as needed */
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+    /* Adjust as needed */
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+    /* Adjust as needed */
+}
+
+.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .p-6 {
     padding: 1.5rem;
 }
 
-.tracking-widest.text-xs.title-font.font-medium.text-gray-400.mb-1 {
-    letter-spacing: 0.25em;
-    /* Increase letter spacing for headings */
-    font-size: 0.75rem;
-    /* Adjust heading font size */
-    color: #9ca3af;
-    /* Slightly lighter gray for headings */
+.bg-white {
+    background-color: #ffffff;
+    /* Adjust as needed */
 }
 
-.title-font.text-lg.font-medium.text-gray-900.mb-3 {
-    font-size: 1rem;
-    /* Adjust body text size */
-    color: #212529;
-    /* Darker gray for body text */
-    margin-bottom: 1.5rem;
+.rounded-lg {
+    border-radius: 0.5rem;
+    /* Adjust as needed */
 }
 
-.leading-relaxed.mb-5 {
-    line-height: 1.6;
-    /* Adjust line height for better readability */
-    margin-bottom: 2.5rem;
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    /* Adjust as needed */
 }
 
-/* Link Styles */
-.inline-flex.items-center.text-indigo-500.hover:text-gray-900 {
-    display: flex;
-    align-items: center;
-    color: #6777ef;
-    /* Set icon color */
-    transition: color 0.2s ease-in-out;
-    /* Add hover effect */
-}
-
-.inline-flex.items-center.text-indigo-500.hover:text-gray-900 svg {
-    margin-left: 0.5rem;
-    /* Adjust icon spacing */
-}
-
-.inline-flex.items-center.text-indigo-500.hover:text-gray-900:hover {
-    color: #212529;
-    /* Change text color on hover */
-}
-
-/* Icon Styles */
-svg {
-    width: 1.25rem;
-    /* Reduce icon size */
-    height: 1.25rem;
-    /* Reduce icon size */
-    fill: currentColor;
-    /* Inherit icon color from link */
+.font-semibold {
+    font-weight: 600;
 }

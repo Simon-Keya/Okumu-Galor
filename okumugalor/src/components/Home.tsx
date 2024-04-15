@@ -25,11 +25,10 @@ const Home: React.FC<HomeProps> = ({ id }) => {
                 PAINTER FINE ARTS PORTFOLIO
               </h4>
             </div>
-            <div className="flex items-center justify-center">
+            <div>
               <img
                 src="/assets/Art.jpg" 
                 alt="Okumu Galor"
-                className="rounded-md w-3/4 md:w-full h-auto object-cover mx-auto"
               />
             </div>
           </div>

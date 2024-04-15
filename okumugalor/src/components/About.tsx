@@ -21,33 +21,20 @@ const About: React.FC<AboutProps> = ({ id }) => {
             </div>
           </div>
           {/* Text Section */}
-          <div className="flex flex-col text-center sm:text-left md:text-left">
+          <div className="text-container">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               About Me
             </h1>
+            <p className="leading-loose text-gray-600">
+              <strong>Name:</strong> Okumu Clinton<br />
+              <strong>Profession:</strong> Artist<br />
+              <strong>Interests:</strong> Painting, Photography, Music
+            </p>
             <p className="lg:w-full mx-auto leading-relaxed text-base">
               I am a passionate artist with a deep love for creating unique and expressive
               paintings. My work is influenced by a variety of sources, and I am constantly
               exploring new techniques and mediums to bring my visions to life.
             </p>
-            <h2 className="tracking-widest text-xs title-font font-medium text-gray-900 mb-1">
-                  Okumu Clinton
-                </h2>
-                <p className="leading-loose text-gray-600">
-                  Artist
-                  <br />
-                  Painting is my passion.
-                  <br />
-                  I see beauty in all things,
-                  <br />
-                  and I paint what I see.
-                  <br />
-                  I have been painting for 15 years.
-                  <br />
-                  My preferred medium is oil, but I also appreciate the subtleties of watercolors.
-                  <br />
-                  In the past five years, I've dabbled in sketching and drawing.
-                </p>
           </div>
         </div>
       </div>

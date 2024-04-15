@@ -1,7 +1,7 @@
 /* Header Styles */
 
 .header {
-    background-color: #4a5568;
+    background-color: #596f94;
     /* Updated header background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Shadow */
@@ -39,10 +39,6 @@
     /* Display as flex */
 }
 
-.items-center {
-    align-items: center;
-    /* Center items vertically */
-}
 
 .justify-between {
     justify-content: space-between;
@@ -64,7 +60,7 @@ ul li {
 }
 
 .text-gray-800 {
-    color: #2d3748;
+    color: #0f1011;
     /* Dark gray text */
 }
 

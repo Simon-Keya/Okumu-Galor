@@ -1,95 +1,100 @@
-/* Footer Styles */
-
+/* Base styles */
 .footer {
-    background-color: #f7fafc;
-    /* Background color */
-    color: #4a5568;
-    /* Text color */
+    background-color: #1c1241;
+    border-top: 1px solid #e2e8f0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.container {
-    width: 100%;
-    /* Full width */
-    padding-right: 2rem;
-    /* Right padding */
-    padding-left: 2rem;
-    /* Left padding */
-    margin-right: auto;
-    /* Center the container */
-    margin-left: auto;
-    /* Center the container */
+.footer .container {
+    max-width: 800px;
 }
 
-.px-6 {
-    padding-right: 1.5rem;
-    /* Right padding */
-    padding-left: 1.5rem;
-    /* Left padding */
-}
-
-.py-4 {
-    padding-top: 1rem;
-    /* Top padding */
-    padding-bottom: 1rem;
-    /* Bottom padding */
-}
-
-.flex {
+.footer .flex {
     display: flex;
-    /* Display as flex */
-}
-
-.flex-col {
-    flex-direction: column;
-    /* Column layout */
-}
-
-.md\:flex-row {
     flex-direction: row;
-    /* Row layout for medium screens and above */
-}
-
-.items-center {
-    align-items: center;
-    /* Center items vertically */
-}
-
-.justify-between {
     justify-content: space-between;
-    /* Space between items */
+    align-items: flex-start;
 }
 
-.md\:justify-start {
-    justify-content: flex-start;
-    /* Start alignment for medium screens and above */
+.footer .flex-col {
+    flex-direction: column;
 }
 
-.text-gray-500 {
-    color: #718096;
-    /* Gray text */
+.footer .text-xl {
+    font-size: 1.25rem;
+    color: #ffffff;
 }
 
-.text-gray-600 {
-    color: #4a5568;
-    /* Dark gray text */
+.footer .ml-3 {
+    margin-left: 0.5rem;
 }
 
-.mt-4 {
+.footer .mt-4 {
     margin-top: 1rem;
-    /* Top margin */
+    margin-right: 10px;
 }
 
-.md\:mt-0 {
+.footer .md\:mt-0 {
     margin-top: 0;
-    /* No top margin for medium screens and above */
 }
 
-.ml-3 {
-    margin-left: 0.75rem;
-    /* Left margin */
+.footer .text-white {
+    color: #ffffff;
 }
 
-.ml-1 {
-    margin-left: 0.25rem;
-    /* Left margin */
+.footer .text-black-500 {
+    color: #f4f7fc;
+}
+
+.footer .mb-2 {
+    margin-bottom: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer .mb-4 {
+    margin-bottom: 1rem;
+}
+
+.footer .md\:mb-0 {
+    margin-bottom: 0;
+}
+
+.footer .space-x-4>*:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.footer .flex-grow {
+    flex-grow: 1;
+}
+
+.footer .text-right {
+    text-align: end;
+    margin-right: 0px;
+}
+
+.footer .items-right {
+    align-items: flex-end;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 0.5rem;
+    }
+
+    .footer .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .flex>* {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .text-xl {
+        font-size: 1rem;
+    }
 }
