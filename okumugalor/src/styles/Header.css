@@ -1,7 +1,7 @@
 /* Header Styles */
 
 .header {
-    background-color: #596f94;
+    background-color: #3c6bbd;
     /* Updated header background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* Shadow */
@@ -30,15 +30,14 @@
 .py-4 {
     padding-top: 1rem;
     /* Top padding */
-    padding-bottom: 1rem;
-    /* Bottom padding */
+    padding-bottom: 0.2rem;
+    /* Adjusted bottom padding */
 }
 
 .flex {
     display: flex;
     /* Display as flex */
 }
-
 
 .justify-between {
     justify-content: space-between;

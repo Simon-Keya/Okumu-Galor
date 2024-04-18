@@ -8,13 +8,13 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   return (
-    <header className="bg-teal-500 shadow-lg">  
+    <header className="bg-teal-500 shadow-lg pb-2">  {/* Reduced bottom padding */}
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div>
             <Link to="/" className="flex items-center text-black text-2xl font-bold">
-              <img src="/logo.png" alt="Okumu Galor" className="w-8 h-8 mr-2" />
-              OKUMU GALOR
+              <img src="/logo.png" alt="Okumu Galore" className="w-8 h-8 mr-2" />
+              OKUMU GALORE
             </Link>
           </div>
           <div>

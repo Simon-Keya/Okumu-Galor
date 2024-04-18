@@ -13,11 +13,11 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
    },
    {
      title: 'Phone',
-     value: '(123) 456-7890',
+     value: '(075) 741-0032',
    },
    {
      title: 'Address',
-     value: '123 Main Street, City, State 12345',
+     value: '123 Main Street, Narok, Kenya',
    },
    {
      title: 'Social Media',

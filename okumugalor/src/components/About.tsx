@@ -28,7 +28,7 @@ const About: React.FC<AboutProps> = ({ id }) => {
             <p className="leading-loose text-gray-600">
               <strong>Name:</strong> Okumu Clinton<br />
               <strong>Profession:</strong> Artist<br />
-              <strong>Interests:</strong> Painting, Photography, Music
+              <strong>Interests:</strong> Art, Woodwork, Film.
             </p>
             <p className="lg:w-full mx-auto leading-relaxed text-base">
               I am a passionate artist with a deep love for creating unique and expressive

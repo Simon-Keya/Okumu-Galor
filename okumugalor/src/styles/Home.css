@@ -1,10 +1,14 @@
-/* Base styles for the home page */
+/* Home.css */
+
 .home {
     background-color: #5380d8;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: calc(100vh - 80px);
+    /* Adjusted height to account for the header */
     position: relative;
+    margin-top: auto;
+    /* Adjusted margin-top to reduce space */
 }
 
 /* Gradient overlay styles */
@@ -22,14 +26,14 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
 }
 
 /* Grid styles */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 @media (min-width: 768px) {

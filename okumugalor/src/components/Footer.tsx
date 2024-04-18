@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
             >
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
-            <span className="ml-3 text-white text-xl">OkumuArt</span>
+            <span className="ml-3 text-white text-xl">Okumu</span>
           </div>
           <div className="flex flex-row md:flex-row md:items-start md:justify-between mt-4 md:mt-0">
             <p className="text-black-500 mb-2 md:mb-0">
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
               Privacy Terms & Policy
             </p>
           </div>
-          <p className="text-black-500 flex-grow text-right">© {new Date().getFullYear()} OkumuGalor. All rights reserved.</p>
+          <p className="text-black-500 flex-grow text-right">© {new Date().getFullYear()} OkumuGalore. All rights reserved.</p>
         </div>
       </div>
     </footer>
